@@ -15,8 +15,11 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import  App  from './components/App.vue';
+// import ListaKlientow from './components/ListaKlientow.vue';
+// app.component('lista-klientow', ListaKlientow);
+app.component('main-app', App);
+
 
 /**
  * The following block of code may be used to automatically register your

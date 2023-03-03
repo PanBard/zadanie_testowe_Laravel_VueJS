@@ -20,3 +20,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/lista_klientow', [App\Http\Controllers\KlientController::class, 'przekieruj_na_liste_klientow'])->middleware('auth');
